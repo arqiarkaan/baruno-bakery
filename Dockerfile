@@ -1,8 +1,5 @@
 FROM httpd:2.4
 
-# Salin file httpd.conf yang telah disesuaikan ke dalam container
-COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
-
 # Salin seluruh konten proyek ke dalam direktori htdocs
 COPY . /usr/local/apache2/htdocs/
 
