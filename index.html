@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Baruno Bakery is a bakery company that selling healty bread and cake. Although it's healty the quality and taste is still our top priority. Baruno Bakery already make a collaboration with other big company such as starbucks, breadtalk, etc"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Browser Tab logo -->
+    <link rel="icon" href="img/logo-baruno.png" />
+    <link rel="apple-touch-icon" href="img/logo-baruno-apple.png" />
+
+    <!-- Fonts (Playfair display, Rubik) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- Icon dari Ion Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Baruno Bakery</title>
+  </head>
+  <body>
+    <!-- Header (Navbar) Start-->
+    <header class="header">
+      <a href="index.html" class="logo-link">
+        <p class="nav-logo"><span>BB</span>akery</p>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="index.html">Home</a></li>
+          <li><a class="main-nav-link" href="#about">About Us</a></li>
+          <li><a class="main-nav-link" href="#meals">Product</a></li>
+          <li><a class="main-nav-link" href="#team">Our Chef</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#cta">Message Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="extra-nav">
+        <a class="main-nav-link" href="login.html">Log In</a>
+        <a class="main-nav-link sign-up" href="signup.html">Sign Up</a>
+        <a id="menu"
+          ><ion-icon
+            class="icon-nav ham-menu"
+            name="menu-outline"
+            onclick="changeIcon(this)"
+          ></ion-icon
+        ></a>
+      </div>
+    </header>
+    <!-- Header (Navbar) end-->
+
+    <main>
+      <!-- Section Hero Start -->
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Experience guilt-free indulgence with our healthy bakery. Treat
+              yourself today
+            </h1>
+            <p class="hero-description">
+              From classic croissants to artisanal cakes, our bakery offers a
+              variety of baked goods that cater to every taste and occasion.
+              Taste it today and indulge in a sweet treat!
+            </p>
+            <a href="#meals" class="btn btn--full margin-right-sm">Order now</a>
+
+            <a href="#about" class="btn btn--outline">Learn more &darr;</a>
+            <div class="delivered-meals">
+              <div class="delivered-imgs">
+                <img src="img/customers/dimas.jpg" alt="Customer photo" />
+                <img src="img/customers/asadel.jpg" alt="Customer photo" />
+                <img src="img/customers/geril.jpg" alt="Customer photo" />
+                <img src="img/customers/fajrul.jpg" alt="Customer photo" />
+                <img src="img/customers/farras.jpg" alt="Customer photo" />
+                <img src="img/customers/rehan.jpg" alt="Customer photo" />
+              </div>
+              <p class="delivered-text">
+                <span>63,000+</span> order delivered last year!
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <source srcset="img/hero-glr.webp" type="image/webp" />
+              <source srcset="img/hero-gallery.png" type="image/png" />
+
+              <img src="img/hero-gallery.png" class="hero-img" alt="3 images" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Hero End -->
+
+      <!-- Section About US Start -->
+
+      <section class="section-about" id="about">
+        <div class="container">
+          <span class="subheading">About Us</span>
+          <h2 class="heading-secondary">
+            Partnering for Quality: Our Three-Part Approach to Baking Excellence
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <!-- about 01 -->
+          <div class="about-text-box">
+            <p class="about-number">01</p>
+            <h3 class="heading-tertiary">
+              Delicious and Nutritious Baked Goods
+            </h3>
+            <p class="about-description">
+              Our bakery offers a selection of healthy and delicious baked
+              goods, with a focus on bread and cake. We use only the highest
+              quality ingredients to ensure that every bite is both nutritious
+              and satisfying.
+            </p>
+          </div>
+
+          <div class="about-img-box">
+            <img
+              src="img/about-us/about-us-1.png"
+              class="about-img"
+              alt="Lot of bread"
+            />
+          </div>
+
+          <!-- about 02 -->
+          <div class="about-img-box">
+            <img
+              src="img/about-us/about-us-2.png"
+              class="about-img"
+              alt="Wheat"
+            />
+          </div>
+          <div class="about-text-box">
+            <p class="about-number">02</p>
+            <h3 class="heading-tertiary">
+              Quality and Taste: Our Commitment to You
+            </h3>
+            <p class="about-description">
+              We believe that healthy eating doesn't have to mean sacrificing
+              flavor. We are proud to partner with many large corporations who
+              share our commitment to quality and taste.
+            </p>
+          </div>
+
+          <!-- about 03 -->
+          <div class="about-text-box">
+            <p class="about-number">03</p>
+            <h3 class="heading-tertiary">
+              Our Story: From Humble Beginnings to a Respected Name
+            </h3>
+            <p class="about-description">
+              Since our establishment in 2023, we have grown to become a
+              well-respected name in the industry, thanks to our dedication to
+              quality and customer satisfaction. Whether you're in the mood for
+              a quick snack or a special treat, we have something for everyone
+              at our bakery!
+            </p>
+          </div>
+          <div class="about-img-box">
+            <img
+              src="img/about-us/about-us-3.png"
+              class="about-img about-us-3-fix"
+              alt="Old Bakery Store"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section About US End -->
+
+      <!-- Section Featured (Collaboration) Start -->
+
+      <section class="section-featured" id="featured">
+        <div class="container">
+          <h2 class="heading-featured-in">in collaboration with</h2>
+          <div class="logos">
+            <img src="img/logos/chatime-logo-3.png" alt="Logo Chatime" />
+            <img
+              src="img/logos/kopi-kenangan-logo-2.png"
+              alt="Logo Kopi Kenangan"
+            />
+            <img src="img/logos/rotiboy-logo-5.png" alt="Logo Roti Boy" />
+            <img
+              src="img/logos/starbucks-logo-png-1.png"
+              alt="Logo Starbucks"
+            />
+            <img src="img/logos/breadtalk-logo.png" alt="Logo Breadtalk" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Featured (Collaboration) End -->
+
+      <!-- Section Range of Product Start -->
+
+      <section class="section-meals" id="meals">
+        <div class="container center-text">
+          <span class="subheading">range of products</span>
+          <h2 class="heading-secondary">
+            Healthy breads and cakes without compromising on deliciousness
+          </h2>
+        </div>
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="product-range">
+            <img
+              src="img/meals/bread.jpg"
+              class="product-range-img"
+              alt="Bread Products"
+            />
+            <div class="product-range-content">
+              <div class="product-range-tags">
+                <span class="tag tag--vegetarian">Vegetarian</span>
+              </div>
+              <p class="product-range-title">Bread</p>
+              <ul class="product-range-attributes">
+                <li class="product-range-attribute">
+                  <ion-icon
+                    class="product-range-icon"
+                    name="flame-outline"
+                  ></ion-icon>
+                  <span><strong>280 - 975</strong> calories</span>
+                </li>
+                <li class="product-range-attribute">
+                  <ion-icon
+                    class="product-range-icon"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span>NutriScore &reg; <strong>74</strong></span>
+                </li>
+                <li class="product-range-attribute">
+                  <ion-icon
+                    class="product-range-icon"
+                    name="star-outline"
+                  ></ion-icon>
+                  <span><strong>4.9</strong> rating (537)</span>
+                </li>
+                <li class="product-range-attribute">
+                  <span class="product-range-icon">Rp</span>
+                  <span>13.500 - 232.000</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="product-range">
+            <img
+              src="img/meals/cake.jpg"
+              class="product-range-img"
+              alt="Cake Products"
+            />
+            <div class="product-range-content">
+              <div class="product-range-tags">
+                <span class="tag tag--stevia">Stevia Sugar</span>
+                <span class="tag tag--lf">Low Fat</span>
+              </div>
+              <p class="product-range-title">Cake</p>
+              <ul class="product-range-attributes">
+                <li class="product-range-attribute">
+                  <ion-icon
+                    class="product-range-icon"
+                    name="flame-outline"
+                  ></ion-icon>
+                  <span><strong>354 - 1026</strong> calories</span>
+                </li>
+                <li class="product-range-attribute">
+                  <ion-icon
+                    class="product-range-icon"
+                    name="restaurant-outline"
+                  ></ion-icon>
+                  <span>NutriScore &reg; <strong>92</strong></span>
+                </li>
+                <li class="product-range-attribute">
+                  <ion-icon
+                    class="product-range-icon"
+                    name="star-outline"
+                  ></ion-icon>
+                  <span><strong>4.8</strong> rating (441)</span>
+                </li>
+                <li class="product-range-attribute">
+                  <span class="product-range-icon">Rp</span>
+                  <span>20.200 - 520.000</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="diets">
+            <h3 class="heading-tertiary">Works with any diet:</h3>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Gluten-free</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Lactose-free</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Keto</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Paleo</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Low FODMAP</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Kid-friendly</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container all-recipes">
+          <a href="product.html" class="link">See all products &rarr;</a>
+        </div>
+      </section>
+
+      <!-- Section Range of Product End -->
+
+      <!-- Section Our Team Start -->
+
+      <section class="section-team" id="team">
+        <div class="main-heading">
+          <span class="subheading">Our Master Chef</span>
+          <p class="heading-secondary">We're professional at our skills</p>
+        </div>
+        <div class="box-container">
+          <div class="box">
+            <div class="image">
+              <img src="img/team/darren.jpg" alt="Foto Darren" />
+            </div>
+            <div class="content">
+              <h3>Darren Arqiarkaan Dyazfajri Teddy</h3>
+              <p>Soes Chef</p>
+              <div class="share">
+                <a
+                  href="https://www.facebook.com/darren.arqiarkaan.75/"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/darrenarkaan/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/arqiarkaan/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img src="img/team/baskoro.jpg" alt="Foto Baskoro" />
+            </div>
+            <div class="content">
+              <h3>Baskoro Bayu Baruno</h3>
+              <p>Executive Chef</p>
+              <div class="share">
+                <a href="#" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="image">
+              <img src="img/team/saad-3.png" id="saad" alt="Foto Saad" />
+            </div>
+            <div class="content">
+              <h3>Sad Rizk Mubarok Nasution</h3>
+              <p>Demi Chef</p>
+              <div class="share">
+                <a href="" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" target="_blank"> </a>
+                <a href="" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" target="blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Our Team End -->
+
+      <!-- Section Statistic Start -->
+
+      <section class="section-statistic" id="statistic">
+        <div class="container grid grid--4-cols">
+          <div class="statistic">
+            <ion-icon class="statistic-icon" name="people"></ion-icon>
+            <p class="statistic-title">67</p>
+            <p class="statistic-text">Skilled Proffesional</p>
+          </div>
+          <div class="statistic">
+            <ion-icon class="statistic-icon" name="cart"></ion-icon>
+            <p class="statistic-title">7324</p>
+            <p class="statistic-text">Avg Order per Day</p>
+          </div>
+          <div class="statistic">
+            <ion-icon class="statistic-icon" name="storefront"></ion-icon>
+            <p class="statistic-title">42</p>
+            <p class="statistic-text">Branch Shop</p>
+          </div>
+          <div class="statistic">
+            <ion-icon class="statistic-icon" name="star"></ion-icon>
+            <p class="statistic-title">4.85</p>
+            <p class="statistic-text">Avg Rating</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Statistic End -->
+
+      <!-- Section Customer Testimonials Start -->
+
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">Customer Testimonials</span>
+          <h2 class="heading-secondary">
+            Once you try it, you'll never settle for less!
+          </h2>
+
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Geril"
+                src="img/customers/geril.jpg"
+              />
+              <blockquote class="testimonial-text">
+                I was blown away by the taste and quality of the bread and cake
+                from this bakery. I couldn't believe it was healthy too!
+              </blockquote>
+              <p class="testimonial-name">&mdash; Raden Gheryl</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Rehan"
+                src="img/customers/rehan.jpg"
+              />
+              <blockquote class="testimonial-text">
+                The bread and cake from this bakery are my new go-to treats.
+                They're delicious and nutritious, what more could you want
+              </blockquote>
+              <p class="testimonial-name">&mdash; Rayhan Alfarizi</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Asadel"
+                src="img/customers/asadel.jpg"
+              />
+              <blockquote class="testimonial-text">
+                I'm so happy I discovered this bakery. Their baked goods are
+                both healthy and tasty, and they make the perfect snack any time
+                of day.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Satrio Asadel</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                alt="Photo of customer Farras"
+                src="img/customers/farras.jpg"
+              />
+              <blockquote class="testimonial-text">
+                I'm a big fan of this bakery's commitment to quality and taste.
+                Their bread and cake are both delicious and healthy, a rare
+                combination!
+              </blockquote>
+              <p class="testimonial-name">&mdash; Farras Yasyfa</p>
+            </figure>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/g1.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/g2.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/g3.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/g4.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/g5.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/g6.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/g7.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/g8.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/g9.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/g10.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/g11.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/gallery/g12.jpg"
+              alt="Photo of beautifully
+            arranged food"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Section Customer Testimonials End -->
+
+      <!-- Section Message Us Start -->
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Let us know your thoughts!</h2>
+              <p class="cta-text">
+                Feel free to give any suggestion or somekind to our business
+                entirely. Also you can tell us any product idea or statistic
+                that you want to be available here. Let us know so we can be
+                better.
+              </p>
+
+              <form
+                action="index.html"
+                class="cta-form"
+                id="message-form"
+                name="message-form"
+                novalidate
+              >
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input id="full-name" type="text" name="full-name" required />
+                  <span id="full-name-error" class="error-message"></span>
+                </div>
+
+                <div>
+                  <label for="email">Email address</label>
+                  <input id="email" type="email" name="email" required />
+                  <span id="email-error" class="error-message"></span>
+                </div>
+
+                <div class="message-container">
+                  <label for="message">Your Message</label>
+                  <textarea
+                    class="message"
+                    id="message"
+                    name="message"
+                    required
+                  >
+                  </textarea>
+                  <span id="message-error" class="error-message"></span>
+                </div>
+
+                <div class="select-container">
+                  <label for="select-where">Where did you hear from us?</label>
+                  <select id="select-where" name="select-where" required>
+                    <option value="">Please choose one option:</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">YouTube video</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="others">Others</option>
+                  </select>
+                  <span id="select-where-error" class="error-message"></span>
+                </div>
+
+                <button type="submit" class="btn btn--form btn-submit">
+                  Send
+                </button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Chef Cooking - Let him cook!"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Message Us End -->
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <p class="nav-logo adjust-logo"><span>BB</span>Bakery</p>
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2023</span> by Group 1 - 2SE1.
+            All rights reserved.
+          </p>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Baruno Bakery</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              Jalan Raya Bojongsari No.32, Bojongsari Baru, Depok City, West
+              Java
+            </p>
+            <p>
+              <a class="footer-link" href="tel:021-8082-3332">021-8082-3332</a
+              ><br />
+              <a class="footer-link" href="mailto:barunobakery@gmail.com"
+                >barunobakery@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col location-map-container">
+          <p class="footer-heading">Location</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.2447515479278!2d106.74229226962623!3d-6.396706766843947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e8b90a353be1%3A0x76bf13824ff2f130!2sJl.%20Raya%20Bojongsari%20No.32%2C%20Bojongsari%20Baru%2C%20Kec.%20Bojongsari%2C%20Kota%20Depok%2C%20Jawa%20Barat%2016516!5e0!3m2!1sen!2sid!4v1686209641009!5m2!1sen!2sid"
+            class="location-map"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </nav>
+      </div>
+    </footer>
+
+    <button id="scroll-top" onclick="topFunction()">&uarr;</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

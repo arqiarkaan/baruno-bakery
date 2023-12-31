@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Baruno Bakery is a bakery company that selling healty bread and cake. Although it's healty the quality and taste is still our top priority. Baruno Bakery already make a collaboration with other big company such as starbucks, breadtalk, etc"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Browser Tab logo -->
+
+    <link rel="icon" href="img/logo-baruno.png" />
+    <link rel="apple-touch-icon" href="img/logo-baruno-apple.png" />
+
+    <!-- Fonts (Playfair display, Roboto) -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- Icon dari Ion Icons -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Baruno Bakery - Login</title>
+  </head>
+  <body>
+    <div>
+      <a href="index.html" class="logo-link logo-link-2">
+        <p class="nav-logo"><span>BB</span>akery</p>
+      </a>
+    </div>
+
+    <div class="containerLogin">
+      <div class="form-box">
+        <h1 id="headingForm">Login</h1>
+        <form action="index.html" id="login-form" name="login-form" novalidate>
+          <div class="input-group input-login">
+            <div class="input-field">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input
+                type="email"
+                placeholder="Email"
+                name="email-login"
+                id="email-login"
+                required
+              />
+              <span id="email-login-error" class="error"></span>
+            </div>
+            <div class="input-field">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input
+                type="password"
+                placeholder="Password"
+                id="password-login"
+                name="password-login"
+                required
+              />
+              <span id="password-login-error" class="error"></span>
+            </div>
+          </div>
+          <div class="btn-field2">
+            <button type="submit" id="ConfirmBtn">LOGIN</button>
+          </div>
+
+          <div class="footer-text">
+            <p>
+              Don't have an account?
+              <span><a href="signup.html">Sign Up</a></span>
+            </p>
+            <a href="index.html" class="back-to-home">&larr;Back to home</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>
