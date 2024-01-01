@@ -12,7 +12,7 @@ pipeline {
         dir('C:/COLLEGE/Baruno-Bakery/') {
           script {
             echo 'Pulling latest changes from GitHub...'
-            bat 'git pull origin main'
+            bat 'git pull https://github.com/arqiarkaan/baruno-bakery.git main'
           }
         }
       }
