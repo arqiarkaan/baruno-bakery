@@ -12,7 +12,8 @@ pipeline {
         dir('C:/COLLEGE/Baruno-Bakery/') {
           script {
             echo 'Pulling latest changes from GitHub...'
-            bat 'git pull https://github.com/arqiarkaan/baruno-bakery.git main'
+            bat 'git config --global --add safe.directory C:/COLLEGE/Baruno-Bakery'
+            bat 'git pull origin main'
           }
         }
       }
