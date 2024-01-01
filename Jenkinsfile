@@ -7,6 +7,16 @@ pipeline {
     DOCKERHUB_CREDENTIALS = credentials('arqiarkaan-dockerhub')
   }
   stages {
+    stage('Updating local repository') {
+      steps {
+        dir('C:/COLLEGE/Baruno-Bakery/') {
+          script {
+            echo 'Pulling latest changes from GitHub...'
+            bat 'git pull origin main'
+          }
+        }
+      }
+    }
     stage('Build') {
       steps {
         dir('C:/COLLEGE/Baruno-Bakery/') {
